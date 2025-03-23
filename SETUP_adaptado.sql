@@ -56,7 +56,8 @@ CREATE TABLE Cliente
  ID_Cliente INTEGER   NOT null,
  Nome VARCHAR(30) NOT null,
  Sexo CHAR(01) NOT  NULL,
- ID_Cidade INTEGER   NOT null
+ ID_Cidade INTEGER   NOT null,
+ Estado_civil CHAR(01) NOT NULL
 );
 
 ALTER TABLE Cliente ADD CONSTRAINT PK_Cliente PRIMARY KEY (ID_Cliente);
@@ -219,96 +220,96 @@ commit;
 
 -- Cliente
 
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (1, 'Jo o da Silva', 'M', 1);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (2, 'Maria Oliveira', 'F', 2);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (3, 'Pedro Santos', 'M', 28);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (4, 'Ana Costa', 'F', 4);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (5, 'Lucas Rodrigues', 'M', 5);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (6, 'Mariana Almeida', '1', 29);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (7, 'Carlos Souza', '2', 7);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (8, 'Juliana Fernandes', 'F', 8);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (9, 'Rafael Gomes', 'M', 30);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (10, 'Camila Martins', 'F', 10);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (11, 'Fernando Lima', '2', 11);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (12, 'Vanessa Ribeiro', 'F', 31);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (13, 'Jos  Ferreira', 'M', 13);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (14, 'Carolina Pires', 'F', 14);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (15, 'Eduardo Sousa', 'M', 32);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (16, 'Luiza Carvalho', 'F', 16);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (17, 'Paulo Andrade', '2', 17);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (18, 'Amanda Nascimento', 'F', 33);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (19, 'Gustavo Teixeira', 'M', 19);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (20, 'Isabela Barbosa', '1', 20);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (21, 'Ant nio Castro', 'M', 34);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (22, 'Fernanda Duarte', 'F', 22);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (23, 'Marcelo Ferreira', 'M', 23);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (24, 'Let cia Cavalcanti', 'F', 35);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (25, 'Andr  Alves', 'M', 25);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (26, 'Patr cia Santos', 'F', 26);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (27, 'Ricardo Oliveira', 'M', 36);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (28, 'Bianca Lima', '1', 28);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (29, 'S rgio Mendes', 'M', 29);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (30, 'Mariana Costa', '1', 37);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (31, 'Fernando Oliveira', 'M', 1);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (32, 'Mariana Silva', 'F', 2);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (33, 'Gustavo Costa', 'M', 38);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (34, 'Isabela Santos', 'F', 4);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (35, 'Ricardo Rodrigues', 'M', 5);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (36, 'Luana Almeida', 'F', 30);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (37, 'Henrique Souza', 'M', 7);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (38, 'Larissa Fernandes', 'F', 8);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (39, 'Rafael Gomes', 'M', 9);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (40, 'Carolina Oliveira', 'F', 10);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (41, 'Bruno Lima', 'M', 11);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (42, 'Amanda Ribeiro', 'F', 29);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (43, 'Rodrigo Ferreira', 'M', 13);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (44, 'Marina Pires', 'F', 14);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (45, 'Diego Sousa', 'M', 15);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (46, 'Bianca Carvalho', 'F', 35);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (47, 'Felipe Andrade', 'M', 17);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (48, 'Let cia Nascimento', 'F', 18);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (49, 'Andr  Teixeira', 'M', 19);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (50, 'J lia Barbosa', 'F', 20);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (51, 'Rafael Castro', 'M', 37);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (52, 'Aline Duarte', 'F', 22);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (53, 'Vinicius Ferreira', 'M', 23);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (54, 'Nat lia Cavalcanti', 'F', 24);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (55, 'Marcelo Alves', 'M', 25);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (56, 'Patr cia Santos', 'F', 26);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (57, 'Lucas Oliveira', 'M', 27);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (58, 'Juliana Lima', 'F', 28);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (59, 'Pedro Mendes', 'M', 29);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (60, 'Vanessa Costa', 'F', 36);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (61, 'Ricardo Almeida', 'M', 1);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (62, 'Laura Lima', 'F', 2);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (63, 'Andr  Costa', 'M', 3);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (64, 'Gabriela Oliveira', 'F', 4);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (65, 'Pedro Rodrigues', 'M', 5);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (66, 'Carolina Alves', 'F', 28);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (67, 'Lucas Souza', 'M', 7);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (68, 'Fernanda Fernandes', 'F', 8);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (69, 'Gustavo Gomes', 'M', 9);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (70, 'Amanda Santos', 'F', 10);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (71, 'Bruno Ribeiro', 'M', 11);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (72, 'Mariana Ferreira', 'F', 30);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (73, 'Rodrigo Pires', 'M', 13);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (74, 'Isabela Sousa', 'F', 14);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (75, 'Diego Silva', 'M', 15);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (76, 'Let cia Carvalho', 'F', 16);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (77, 'Felipe Andrade', 'M', 17);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (78, 'Larissa Nascimento', 'F', 18);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (79, 'Henrique Teixeira', 'M', 19);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (80, 'Camila Barbosa', 'F', 31);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (81, 'Rafael Castro', 'M', 21);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (82, 'Nat lia Duarte', 'F', 22);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (83, 'Vinicius Ferreira', 'M', 23);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (84, 'Mariana Cavalcanti', 'F', 24);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (85, 'Marcelo Alves', 'M', 25);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (86, 'Patr cia Santos', 'F', 26);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (87, 'Lucas Oliveira', 'M', 27);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (88, 'Juliana Lima', 'F', 28);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (89, 'Pedro Mendes', 'M', 29);
-INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade) VALUES (90, 'Vanessa Costa', 'F', 30);
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (1, 'Jo o da Silva', 'M', 1,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (2, 'Maria Oliveira', 'F', 2,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (3, 'Pedro Santos', 'M', 28,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (4, 'Ana Costa', 'F', 4,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (5, 'Lucas Rodrigues', 'M', 5,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (6, 'Mariana Almeida', '1', 29,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (7, 'Carlos Souza', '2', 7,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (8, 'Juliana Fernandes', 'F', 8,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (9, 'Rafael Gomes', 'M', 30,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (10, 'Camila Martins', 'F', 10,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (11, 'Fernando Lima', '2', 11,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (12, 'Vanessa Ribeiro', 'F', 31,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (13, 'Jos  Ferreira', 'M', 13,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (14, 'Carolina Pires', 'F', 14,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (15, 'Eduardo Sousa', 'M', 32,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (16, 'Luiza Carvalho', 'F', 16,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (17, 'Paulo Andrade', '2', 17,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (18, 'Amanda Nascimento', 'F', 33,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (19, 'Gustavo Teixeira', 'M', 19,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (20, 'Isabela Barbosa', '1', 20,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (21, 'Ant nio Castro', 'M', 34,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (22, 'Fernanda Duarte', 'F', 22,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (23, 'Marcelo Ferreira', 'M', 23,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (24, 'Let cia Cavalcanti', 'F', 35,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (25, 'Andr  Alves', 'M', 25,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (26, 'Patr cia Santos', 'F', 26,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (27, 'Ricardo Oliveira', 'M', 36,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (28, 'Bianca Lima', '1', 28,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (29, 'S rgio Mendes', 'M', 29,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (30, 'Mariana Costa', '1', 37,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (31, 'Fernando Oliveira', 'M', 1,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (32, 'Mariana Silva', 'F', 2,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (33, 'Gustavo Costa', 'M', 38,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (34, 'Isabela Santos', 'F', 4,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (35, 'Ricardo Rodrigues', 'M', 5,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (36, 'Luana Almeida', 'F', 30,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (37, 'Henrique Souza', 'M', 7,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (38, 'Larissa Fernandes', 'F', 8,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (39, 'Rafael Gomes', 'M', 9,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (40, 'Carolina Oliveira', 'F', 10,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (41, 'Bruno Lima', 'M', 11,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (42, 'Amanda Ribeiro', 'F', 29,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (43, 'Rodrigo Ferreira', 'M', 13,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (44, 'Marina Pires', 'F', 14,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (45, 'Diego Sousa', 'M', 15,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (46, 'Bianca Carvalho', 'F', 35,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (47, 'Felipe Andrade', 'M', 17,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (48, 'Let cia Nascimento', 'F', 18,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (49, 'Andr  Teixeira', 'M', 19,'S');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (50, 'J lia Barbosa', 'F', 20,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (51, 'Rafael Castro', 'M', 37,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (52, 'Aline Duarte', 'F', 22,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (53, 'Vinicius Ferreira', 'M', 23,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (54, 'Nat lia Cavalcanti', 'F', 24,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (55, 'Marcelo Alves', 'M', 25,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (56, 'Patr cia Santos', 'F', 26,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (57, 'Lucas Oliveira', 'M', 27,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (58, 'Juliana Lima', 'F', 28,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (59, 'Pedro Mendes', 'M', 29,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (60, 'Vanessa Costa', 'F', 36,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (61, 'Ricardo Almeida', 'M', 1,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (62, 'Laura Lima', 'F', 2,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (63, 'Andr  Costa', 'M', 3,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (64, 'Gabriela Oliveira', 'F', 4,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (65, 'Pedro Rodrigues', 'M', 5,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (66, 'Carolina Alves', 'F', 28,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (67, 'Lucas Souza', 'M', 7,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (68, 'Fernanda Fernandes', 'F', 8,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (69, 'Gustavo Gomes', 'M', 9,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (70, 'Amanda Santos', 'F', 10,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (71, 'Bruno Ribeiro', 'M', 11,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (72, 'Mariana Ferreira', 'F', 30,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (73, 'Rodrigo Pires', 'M', 13,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (74, 'Isabela Sousa', 'F', 14,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (75, 'Diego Silva', 'M', 15,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (76, 'Let cia Carvalho', 'F', 16,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (77, 'Felipe Andrade', 'M', 17,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (78, 'Larissa Nascimento', 'F', 18,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (79, 'Henrique Teixeira', 'M', 19,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (80, 'Camila Barbosa', 'F', 31,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (81, 'Rafael Castro', 'M', 21,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (82, 'Nat lia Duarte', 'F', 22,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (83, 'Vinicius Ferreira', 'M', 23,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (84, 'Mariana Cavalcanti', 'F', 24,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (85, 'Marcelo Alves', 'M', 25,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (86, 'Patr cia Santos', 'F', 26,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (87, 'Lucas Oliveira', 'M', 27,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (88, 'Juliana Lima', 'F', 28,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (89, 'Pedro Mendes', 'M', 29,'C');
+INSERT INTO cliente (ID_Cliente, Nome, Sexo, ID_Cidade, Estado_civil) VALUES (90, 'Vanessa Costa', 'F', 30,'C');
 commit;
 
 -- Compras (Cabe alho) - 10.000 compras
@@ -429,8 +430,8 @@ CREATE SEQUENCE SQ_OLAP_CLIENTE;
 CREATE TABLE TB_OLAP_DIM_APARELHO
 (
     ID_APARELHO INT NOT NULL,
-    MODELO VARCHAR(30) NOT NULL,
-    MARCA VARCHAR(30) NOT NULL
+    MODELO VARCHAR(15) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL
 );
 
 ALTER TABLE TB_OLAP_DIM_APARELHO ADD CONSTRAINT PK_OLAP_DIM_APARELHO PRIMARY KEY (ID_APARELHO);
